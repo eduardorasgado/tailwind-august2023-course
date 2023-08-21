@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+  <style>
+
+    h1{
+        font-size: 50px !important;
+    }
+
+    body{
+        padding: 50px;
+        background-color: white;
+    }
+
+    .padding div {
+        
+        height: 200px;
+        display: inline-block;
+        background: crimson;
+        margin-bottom: 100px;
+    }
+
+    .margin {
+      background: orange;
+    }
+
+    .margin div {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        background: lightseagreen;
+    }
+
+    .space {
+      background-color: aqua;
+    }
+
+    .space div {
+        width: 50px;
+        height: 50px;
+        background: orange;
+        
+    }
+</style>
+</head>
+<body>
+   <!-- 
+      sm (640px)	max-width: 640px;
+      md (768px)	max-width: 768px;
+      lg (1024px)	max-width: 1024px;
+      xl (1280px)	max-width: 1280px;
+      2xl (1536px)	max-width: 1536px;
+  -->
+  <h1>Padding</h1>
+  <div class="padding">
+      <div class="pt-12 pb-24 pl-48 pr-10 xl:px-auto">
+        <span class="bg-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aut nulla magnam ullam ad.</span>
+      </div>
+  </div>
+
+  <h1>Padding 2</h1>
+  <div class="padding bg-orange-200 flex justify-center">
+      <div class="px-auto lg:px-10">
+        <span class="bg-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aut nulla magnam ullam ad.</span>
+      </div>
+  </div>
+
+  <h1>Margin</h1>
+  <div class="margin flex">
+      <div class="mb-14 mt-20 ml-1 lg:ml-20"></div>
+  </div>
+
+  <h1>Margin 2</h1>
+  <div class="margin flex justify-end">
+      <div class="mx-auto my-24 sm:mx-6 sm:mt-10 md:mx-auto md:mb-10 md:mt-24 lg:mr-24 lg:mt-1 xl:mx-10"></div>
+  </div>
+
+  <h1>Space</h1>
+  <div class="space flex space-x-16">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+
+  <h1>Space2</h1>
+  <div" class="space space-y-16">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+
+  <h1>Space3</h1>
+  <div" class="space flex space-x-2 space ">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+</body>
+</html>
